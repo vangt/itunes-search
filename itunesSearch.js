@@ -19,5 +19,6 @@ function searchItunes(){
 }
 
 function getNames(data){
-    document.getElementById("searchResults").innerHTML = data.results[0].artistName;
+    document.getElementById("previewUrl1").href = data.results[0].previewUrl;
+    document.getElementById("previewUrl1").innerHTML = "Preview";
 }
