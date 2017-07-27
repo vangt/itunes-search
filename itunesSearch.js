@@ -1,6 +1,14 @@
 "use strict"
 
 function searchItunes(){
+    var appear = document.getElementById("#artistTable");
+    if(appear.style.display === "none"){
+        appear.style.display === "block";
+    }
+    else{
+        appear.style.display = "none";
+    }
+
 	var searchInput = document.getElementById("searchBar").value;
 	//Do something if input has spaces
 
