@@ -1,0 +1,96 @@
+    body {
+      margin: auto;
+      width: 90%;
+    }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+ 
+     .topBototmPadding {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .imgLeft {
+      float: left;
+    }
+   
+    .whtText {
+      color: white;
+    }
+
+    .imgSpread {
+      padding: 10px;
+    }
+
+
+    strong > a:hover {
+      color: black;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 19px;
+    }
+
+    h2 ~ ul {
+      list-style-type: circle;
+    }
+
+    h3 ~ ul {
+      list-style-type: square;
+    }
+
+    @keyframes textAnimate {
+      from {color: white;}
+      to {color: gray;}
+    }
+
+    a[href*="george"] {
+      animation-name: textAnimate;
+      animation-duration: 8s;
+    }
+
+  footer {
+      background-color: black;
+    }
+
+    footer p {
+      color: gray;
+    }
+
+    footer a {
+      color: gray;
+    }
+
+    footer li {
+      color: gray;
+      margin: 0, padding: 0;
+    }
+
+    .noDecor {
+      list-style-type: none;
+    }
+
+    footer a:link {
+      text-decoration: none;
+    }
+
+    footer a:visited {
+      color: gray;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+   

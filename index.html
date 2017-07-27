@@ -2,24 +2,41 @@
 <html>
 	<head>
 	<title>iTunes Search</title>
+
+	
+	<link rel="stylesheet" type="text/css" href="https://web-experience.itunes.apple.com/assets/web-experience-app-7206fac4119fb3050bdf4f6c60ac2329.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	
 	</head>
 	<body>
-		<h1>iTunes Search</h1>
-		
-		<table id="artistTable">
-			<tr>
-				<th>Artist Name</th>
-				<th>Artist ID</th>
-				<th>Artist Song</th>
-			</tr>
-		</table>
+		<div class="container-fluid">
+			<div class="localnav-content">
+				<h2 class="localnav-title">Search iTunes</h2>
+			</div>
+			<div class="l-content-width section section--hero">
+				<input type="search" id="searchBar">
+				<button id="searchButton" onclick="searchItunes()">Search</button>
+			
 
+			
+			
+			<table id="artistTable">
+				<tr>
+					<th>Artist Image</th>
+					<th>Artist Name</th>
+					<th>Track Name</th>
+					<th>Album Name</th>
+					<th>Track Price</th>
+					<th>Album Rating</th>
+				</tr>
+			</table>
 
-		<input type="search" id="searchBar">
-		<button id="searchButton" onclick="searchItunes()">Search</button>
+			</div>
+			
+			
 
-		<script type="text/javascript" src="itunesSearch.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script type="text/javascript" src="itunesSearch.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		</div><!-- End conatianer div -->
 	</body>
 </html>
