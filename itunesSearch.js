@@ -6,7 +6,20 @@ function searchItunes(){
 
 	var searchLink = "https://itunes.apple.com/search?term=" + searchInput + "&limit=5";
 
-	$.getJSON(searchLink, function(data){
-		console.log(data);
+
+	var dataResults = [];
+
+	dataResults = $.getJSON(searchLink, function(data){
+        console.log(data);
+        getNames(data);
+        return data;
 	});
+
+    var x = dataResults;
+
+}
+
+function getNames(data){
+    document.getElementById("previewUrl1").href = data.results[0].previewUrl;
+    document.getElementById("previewUrl1").innerHTML = "Preview";
 }
