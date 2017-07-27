@@ -6,20 +6,17 @@ function searchItunes(){
 
 	var searchLink = "https://itunes.apple.com/search?term=" + searchInput + "&limit=5";
 
-
-	var dataResults = [];
-
-	dataResults = $.getJSON(searchLink, function(data){
-        console.log(data);
-        getNames(data);
-        return data;
+	$.getJSON(searchLink, function(data){
+		var artistData = "";
+		var d = data.results;
+		console.log(data);
+		$.each(d, function(index, name){
+			artistData += "<tr>";
+			artistData += "<td>" + name.artistName + "</td>";
+			artistData += "<td>" + name.artistId + "</td>";
+			artistData += "</tr>"
+		$("#artistTable").append(artistData);
+		});
+		console.log(artistData);		
 	});
-
-    var x = dataResults;
-
-}
-
-function getNames(data){
-    document.getElementById("previewUrl1").href = data.results[0].previewUrl;
-    document.getElementById("previewUrl1").innerHTML = "Preview";
 }

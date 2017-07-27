@@ -5,14 +5,18 @@
 	
 	</head>
 	<body>
-	<h1>iTunes Search</h1>
+		<h1>iTunes Search</h1>
+		
+		<table id="artistTable">
+			<tr>
+				<th>Artist Name</th>
+				<th>Artist ID</th>
+			</tr>
+		</table>
+
 		<input type="search" id="searchBar">
 		<button id="searchButton" onclick="searchItunes()">Search</button>
-		<div id="searchResultsDiv"></div>
-		<p id="searchResults"></p>
-		<ul>
-			<li><a id="previewUrl1" href="" target="_blank"></a></li>
-		</ul>
+
 		<script type="text/javascript" src="itunesSearch.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</body>
