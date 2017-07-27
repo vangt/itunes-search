@@ -3,21 +3,30 @@
 	<head>
 	<title>iTunes Search</title>
 	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
 	</head>
 	<body>
 		<h1>iTunes Search</h1>
+		<input type="search" id="searchBar">
+		<button id="searchButton" onclick="searchItunes()">Search</button>
+
+		
 		
 		<table id="artistTable">
 			<tr>
+				<th>Artist Image</th>
 				<th>Artist Name</th>
-				<th>Artist ID</th>
-				<th>Artist Song</th>
+				<th>Track Name</th>
+				<th>Album Name</th>
+				<th>Track Price</th>
+				<th>Album Rating</th>
 			</tr>
 		</table>
 
 
-		<input type="search" id="searchBar">
-		<button id="searchButton" onclick="searchItunes()">Search</button>
+		
+		
 
 		<script type="text/javascript" src="itunesSearch.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
