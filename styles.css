@@ -1,8 +1,12 @@
     body {
       margin: auto;
-      width: 90%;
+      width: 95%;
     }
-    .navbar {
+    #artistTable {
+      width: 100%;
+      display: none;
+    }
+ /*   .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
@@ -94,3 +98,4 @@
     }
 
    
+*/
