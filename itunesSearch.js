@@ -14,6 +14,7 @@ function searchItunes(){
 			artistData += "<tr>";
 			artistData += "<td>" + name.artistName + "</td>";
 			artistData += "<td>" + name.artistId + "</td>";
+            artistData += "<td>" + name.trackName + "</td>";
 			artistData += "</tr>"
 		$("#artistTable").append(artistData);
 		});
