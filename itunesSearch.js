@@ -12,9 +12,12 @@ function searchItunes(){
 		console.log(data);
 		$.each(d, function(index, name){
 			artistData += "<tr>";
-			artistData += "<td>" + name.artistName + "</td>";
-			artistData += "<td>" + name.artistId + "</td>";
+            artistData += "<td><a href=\"" + name.collectionViewUrl + "\" target=\"_blank\"><img src=\"" + name.artworkUrl100 + "\"></a></td>";            
+            artistData += "<td>" + name.artistName + "</td>";
             artistData += "<td>" + name.trackName + "</td>";
+            artistData += "<td>" + name.collectionName + "</td>";
+            artistData += "<td>" + name.trackPrice + "</td>";
+            artistData += "<td>" + name.trackExplicitness +"</td>";
 			artistData += "</tr>"		
 		});
 		$("#artistTable").append(artistData);
