@@ -26,6 +26,7 @@ function searchItunes(){
             artistData += "<td>" + name.collectionName + "</td>";
             artistData += "<td>" + name.trackPrice + "</td>";
             artistData += "<td>" + name.trackExplicitness +"</td>";
+            artistData += "<td>" + name.trackTimeMillis/60000 +"</td>";            
 			artistData += "</tr>"		
 		});
 		$("#artistTable").append(artistData);
